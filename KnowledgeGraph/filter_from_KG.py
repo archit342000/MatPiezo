@@ -5,7 +5,6 @@ import pickle
 import networkx as nx
 from tqdm import tqdm
 import numpy as np
-from mp_api.client.routes import PiezoRester
 
 def create_KG(fingerprints_path, dist_threshold, e_ij_max_threshold=None):
 
@@ -30,7 +29,7 @@ def create_KG(fingerprints_path, dist_threshold, e_ij_max_threshold=None):
 
     if e_ij_max_threshold is not None:
 
-        pkl_file = os.path.join(base_dir, base_dir + 'eij.pkl')
+        pkl_file = os.path.join(base_dir, base_dir + '_eij.pkl')
         with open(pkl_file, 'rb') as f:
             piezo_data = pickle.load(f)
 
