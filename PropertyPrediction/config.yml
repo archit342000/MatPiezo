@@ -11,7 +11,7 @@ Job:
         write_output: "True"
         parallel: "True"
         #seed=0 means random initalization
-        seed: 366594
+        seed: 875360
     Predict:
         job_name: "my_predict_job"
         reprocess: "False"    
